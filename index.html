@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+    EDIT YOUR PAGE TITLE HERE
+  ============================================================ -->
+  <title>Your Name — Data Analyst & Graphic Designer</title>
+
+  <meta name="description" content="Portfolio of a Data Analyst and Graphic Designer" />
+
+  <!-- Google Fonts: Clash Display + Syne for premium feel -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Icons: Phosphor Icons (CDN - no install needed) -->
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+  <!-- Three.js for 3D background -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ============================================================
+    THREE.JS 3D BACKGROUND CANVAS
+    Renders animated 3D geometric objects in the background
+  ============================================================ -->
+  <canvas id="threeCanvas"></canvas>
+
+  <!-- ============================================================
+    2D PARTICLE CANVAS (stars / floating dots)
+  ============================================================ -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ============================================================
+    CURSOR GLOW FOLLOWER (purely visual)
+  ============================================================ -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ============================================================
+    NOISE OVERLAY (adds film grain texture over everything)
+  ============================================================ -->
+  <div class="noise-overlay"></div>
+
+  <!-- ============================================================
+    NAVIGATION BAR
+    - Logo text comes from PERSONAL_INFO.name in data.js
+    - Nav links scroll to each section
+  ============================================================ -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <!-- Logo: populated by script.js from data.js -->
+      <a href="#hero" class="nav-logo" id="navLogo">YN</a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Mobile hamburger button -->
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+    HERO SECTION
+    - All text is populated dynamically from data.js
+    - The 3D orb visual is pure CSS + JS
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Background geometric grid lines -->
+    <div class="hero-grid"></div>
+
+    <!-- Floating orbs in background -->
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <!-- Badge chip -->
+        <div class="hero-badge" id="heroBadge">
+          <span class="badge-dot"></span>
+          <span id="heroBadgeText">Available for work</span>
+        </div>
+
+        <!-- Main heading: populated from data.js -->
+        <h1 class="hero-title" id="heroTitle">
+          <!-- JS fills this in -->
+        </h1>
+
+        <!-- Role subtitle -->
+        <p class="hero-role" id="heroRole">
+          <!-- JS fills this in -->
+        </p>
+
+        <!-- Short intro -->
+        <p class="hero-intro" id="heroIntro">
+          <!-- JS fills this in -->
+        </p>
+
+        <!-- CTA buttons -->
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">
+            <i class="ph ph-briefcase"></i>
+            View Projects
+          </a>
+          <a href="#contact" class="btn btn-ghost">
+            <i class="ph ph-paper-plane-tilt"></i>
+            Contact Me
+          </a>
+        </div>
+
+        <!-- Social links row: populated from data.js -->
+        <div class="hero-socials" id="heroSocials">
+          <!-- JS fills this in -->
+        </div>
+      </div>
+
+      <!-- New Hero Visual: floating skill cards around glowing orb -->
+      <div class="hero-visual">
+        <div class="hero-3d-card" id="hero3dCard">
+
+          <!-- Static orbit rings -->
+          <div class="hero-orbit-ring hero-orbit-ring-1"></div>
+          <div class="hero-orbit-ring hero-orbit-ring-2"></div>
+
+          <!-- Center glowing orb -->
+          <div class="hero-center-orb"></div>
+
+          <!-- Floating cards -->
+          <div class="hero-float-card hfc-1">
+            <i class="ph ph-chart-bar"></i>
+            <div>
+              <div class="hero-float-card-label">Power BI</div>
+              <div class="hero-float-card-sub">Data Analytics</div>
+            </div>
+          </div>
+
+          <div class="hero-float-card hfc-2">
+            <i class="ph ph-pen-nib"></i>
+            <div>
+              <div class="hero-float-card-label">Brand Identity</div>
+              <div class="hero-float-card-sub">Graphic Design</div>
+            </div>
+          </div>
+
+          <div class="hero-float-card hfc-3">
+            <i class="ph ph-database"></i>
+            <div>
+              <div class="hero-float-card-label">SQL & Python</div>
+              <div class="hero-float-card-sub">Data Analytics</div>
+            </div>
+          </div>
+
+          <div class="hero-float-card hfc-4">
+            <i class="ph ph-paint-brush"></i>
+            <div>
+              <div class="hero-float-card-label">Photoshop</div>
+              <div class="hero-float-card-sub">Graphic Design</div>
+            </div>
+          </div>
+
+          <!-- Decorative dots -->
+          <div class="hero-dot hero-dot-1"></div>
+          <div class="hero-dot hero-dot-2"></div>
+          <div class="hero-dot hero-dot-3"></div>
+          <div class="hero-dot hero-dot-4"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="scroll-indicator">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    ABOUT SECTION
+    - Text populated from data.js → PERSONAL_INFO.about
+  ============================================================ -->
+  <section class="section about-section" id="about">
+    <!-- 3D decoration shape -->
+    <div class="section-3d-deco deco-about">
+      <canvas class="section-shape-canvas" data-shape="torus"></canvas>
+    </div>
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>About Me</span>
+      </div>
+
+      <div class="about-grid">
+        <!-- Left: portrait placeholder -->
+        <div class="about-visual">
+          <div class="about-photo-frame">
+            <!-- 
+              PUT YOUR PHOTO HERE:
+              Replace the div.about-photo-placeholder with:
+              <img src="assets/your-photo.jpg" alt="Your Name" class="about-photo" />
+            -->
+            <div class="about-photo-placeholder">
+              <i class="ph ph-user"></i>
+            </div>
+            <!-- Decorative elements -->
+            <div class="photo-deco photo-deco-1"></div>
+            <div class="photo-deco photo-deco-2"></div>
+          </div>
+
+          <!-- Stats chips: populated from data.js -->
+          <div class="about-stats" id="aboutStats">
+            <!-- JS fills in stats -->
+          </div>
+        </div>
+
+        <!-- Right: text content -->
+        <div class="about-text">
+          <h2 class="section-title" id="aboutTitle"><!-- JS fills --></h2>
+          <div class="about-paragraphs" id="aboutParagraphs">
+            <!-- JS fills paragraphs from data.js -->
+          </div>
+
+          <!-- Dual role callout cards -->
+          <div class="role-cards">
+            <div class="role-card role-data">
+              <i class="ph ph-chart-line"></i>
+              <div>
+                <strong>Data Analyst</strong>
+                <span id="roleDataDesc"><!-- JS fills --></span>
+              </div>
+            </div>
+            <div class="role-card role-design">
+              <i class="ph ph-pen-nib"></i>
+              <div>
+                <strong>Graphic Designer</strong>
+                <span id="roleDesignDesc"><!-- JS fills --></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    SKILLS SECTION
+    - Two columns: Data Analysis | Graphic Design
+    - Populated from data.js → SKILLS
+  ============================================================ -->
+  <section class="section skills-section" id="skills">
+    <div class="section-3d-deco deco-skills">
+      <canvas class="section-shape-canvas" data-shape="icosahedron"></canvas>
+    </div>
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Skills</span>
+      </div>
+      <h2 class="section-title centered">What I Work With</h2>
+
+      <div class="skills-grid">
+        <!-- Data Analysis Skills -->
+        <div class="skills-column glass-card">
+          <div class="skills-col-header">
+            <div class="skills-col-icon data-icon"><i class="ph ph-chart-bar"></i></div>
+            <h3>Data Analysis</h3>
+          </div>
+          <div class="skills-list" id="dataSkillsList">
+            <!-- JS fills from data.js → SKILLS.data -->
+          </div>
+        </div>
+
+        <!-- Graphic Design Skills -->
+        <div class="skills-column glass-card">
+          <div class="skills-col-header">
+            <div class="skills-col-icon design-icon"><i class="ph ph-pen-nib"></i></div>
+            <h3>Graphic Design</h3>
+          </div>
+          <div class="skills-list" id="designSkillsList">
+            <!-- JS fills from data.js → SKILLS.design -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    SERVICES SECTION
+    - Cards populated from data.js → SERVICES array
+  ============================================================ -->
+  <section class="section services-section" id="services">
+    <div class="section-3d-deco deco-services">
+      <canvas class="section-shape-canvas" data-shape="octahedron"></canvas>
+    </div>
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Services</span>
+      </div>
+      <h2 class="section-title centered">What I Can Do For You</h2>
+
+      <div class="services-grid" id="servicesGrid">
+        <!-- JS fills service cards from data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    PROJECTS SECTION
+    - Tab switcher: Graphic Design | Data Analysis
+    - Cards populated from data.js → PROJECTS array
+    - Clicking a card opens the modal
+  ============================================================ -->
+  <section class="section projects-section" id="projects">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Projects</span>
+      </div>
+      <h2 class="section-title centered">Selected Work</h2>
+
+      <!-- Tab switcher buttons -->
+      <div class="projects-tabs">
+        <button class="tab-btn active" data-tab="graphic">
+          <i class="ph ph-pen-nib"></i>
+          Graphic Design
+        </button>
+        <button class="tab-btn" data-tab="data">
+          <i class="ph ph-chart-bar"></i>
+          Data Analysis
+        </button>
+      </div>
+
+      <!-- Project cards grid -->
+      <div class="projects-grid" id="projectsGrid">
+        <!-- JS fills project cards from data.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    CONTACT SECTION
+    - Social / contact links from data.js → SOCIAL_LINKS
+  ============================================================ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-label">
+        <span class="label-line"></span>
+        <span>Contact</span>
+      </div>
+      <h2 class="section-title centered" id="contactTitle"><!-- JS fills --></h2>
+      <p class="contact-sub" id="contactSub"><!-- JS fills --></p>
+
+      <!-- Contact cards: populated from data.js -->
+      <div class="contact-grid" id="contactGrid">
+        <!-- JS fills contact method cards -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+    FOOTER
+    - Text and links from data.js
+  ============================================================ -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-name" id="footerName"><!-- JS fills --></span>
+        <span class="footer-copy" id="footerCopy"><!-- JS fills --></span>
+        <div class="footer-socials" id="footerSocials"><!-- JS fills --></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============================================================
+    PROJECT DETAIL MODAL
+    - Opens when a project card is clicked
+    - Content is injected dynamically by script.js
+    - Supports both graphic and data project fields
+  ============================================================ -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <!-- Close button -->
+      <button class="modal-close" id="modalClose" aria-label="Close modal">
+        <i class="ph ph-x"></i>
+      </button>
+
+      <!-- Modal content is injected here by script.js -->
+      <div class="modal-body" id="modalBody">
+        <!-- Dynamically populated -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================
+    JAVASCRIPT FILES
+    Load data.js FIRST so script.js can access the data
+  ============================================================ -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
