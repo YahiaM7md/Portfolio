@@ -1,111 +1,756 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Yahia Mohamed</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yahia Mohamed | 3D Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #050816;
+      --panel: rgba(17, 24, 39, 0.55);
+      --line: rgba(255, 255, 255, 0.08);
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --primary: #60a5fa;
+      --secondary: #a78bfa;
+      --accent: #22d3ee;
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
 
-<style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-body{
-font-family: Arial;
-margin:0;
-background:#0f172a;
-color:white;
-text-align:center;
-}
+    html {
+      scroll-behavior: smooth;
+    }
 
-header{
-padding:80px 20px;
-}
+    body {
+      font-family: 'Inter', sans-serif;
+      background:
+        radial-gradient(circle at 20% 20%, rgba(96, 165, 250, 0.22), transparent 25%),
+        radial-gradient(circle at 80% 15%, rgba(167, 139, 250, 0.18), transparent 25%),
+        radial-gradient(circle at 50% 80%, rgba(34, 211, 238, 0.12), transparent 25%),
+        linear-gradient(135deg, #020617 0%, #050816 45%, #0f172a 100%);
+      color: var(--text);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
 
-h1{
-font-size:48px;
-}
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+      background-size: 36px 36px;
+      mask-image: radial-gradient(circle at center, black 45%, transparent 100%);
+      pointer-events: none;
+    }
 
-.section{
-padding:60px 20px;
-}
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
-.projects{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
+    .container {
+      width: min(1150px, 92%);
+      margin: auto;
+    }
 
-.card{
-background:#1e293b;
-padding:20px;
-border-radius:10px;
-width:250px;
-}
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(14px);
+      background: rgba(5, 8, 22, 0.55);
+      border-bottom: 1px solid var(--line);
+    }
 
-a{
-color:#38bdf8;
-text-decoration:none;
-}
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 18px 0;
+    }
 
-footer{
-padding:40px;
-opacity:.7;
-}
+    .brand {
+      font-size: 1.1rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
 
-</style>
+    .links {
+      display: flex;
+      gap: 22px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .links a:hover {
+      color: white;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: grid;
+      align-items: center;
+      position: relative;
+      padding: 50px 0 30px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border: 1px solid rgba(96,165,250,0.2);
+      background: rgba(15, 23, 42, 0.55);
+      border-radius: 999px;
+      color: #cbd5e1;
+      box-shadow: var(--shadow);
+      animation: float 4s ease-in-out infinite;
+    }
+
+    .dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--primary));
+      box-shadow: 0 0 18px rgba(34, 211, 238, 0.85);
+    }
+
+    h1 {
+      font-size: clamp(2.8rem, 6vw, 5.6rem);
+      line-height: 0.95;
+      margin: 20px 0 18px;
+      letter-spacing: -0.04em;
+    }
+
+    .gradient {
+      background: linear-gradient(90deg, #ffffff, #93c5fd, #c4b5fd);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .lead {
+      color: var(--muted);
+      font-size: 1.08rem;
+      line-height: 1.8;
+      max-width: 620px;
+    }
+
+    .cta {
+      margin-top: 30px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 22px;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.03);
+      color: white;
+      font-weight: 700;
+      transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+      box-shadow: var(--shadow);
+    }
+
+    .btn:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255,255,255,0.2);
+    }
+
+    .btn.primary {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      border: none;
+    }
+
+    .stats {
+      margin-top: 34px;
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      min-width: 130px;
+      padding: 16px 18px;
+      border-radius: 20px;
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      transform-style: preserve-3d;
+      transition: transform 0.25s ease;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.4rem;
+      margin-bottom: 6px;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .scene {
+      perspective: 1400px;
+      min-height: 540px;
+      display: grid;
+      place-items: center;
+    }
+
+    .card-3d {
+      width: min(420px, 92vw);
+      aspect-ratio: 0.88;
+      position: relative;
+      transform-style: preserve-3d;
+      animation: heroSpin 8s ease-in-out infinite;
+    }
+
+    .glow {
+      position: absolute;
+      inset: auto 10% -7%;
+      height: 120px;
+      background: radial-gradient(circle, rgba(96,165,250,0.45), transparent 65%);
+      filter: blur(18px);
+      transform: translateZ(-80px);
+    }
+
+    .layer {
+      position: absolute;
+      inset: 0;
+      border-radius: 32px;
+      border: 1px solid rgba(255,255,255,0.08);
+      background: linear-gradient(180deg, rgba(255,255,255,0.09), rgba(255,255,255,0.02));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(18px);
+      overflow: hidden;
+    }
+
+    .layer.back {
+      transform: translateZ(-70px) scale(0.96);
+      opacity: 0.42;
+    }
+
+    .layer.mid {
+      transform: translateZ(-30px) scale(0.985);
+      opacity: 0.68;
+    }
+
+    .layer.front {
+      padding: 28px;
+      transform: translateZ(30px);
+    }
+
+    .panel-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 26px;
+    }
+
+    .mini-logo {
+      width: 52px;
+      height: 52px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-weight: 800;
+      background: linear-gradient(135deg, rgba(96,165,250,0.18), rgba(167,139,250,0.2));
+      border: 1px solid rgba(255,255,255,0.08);
+      transform: translateZ(40px);
+    }
+
+    .chip {
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: rgba(255,255,255,0.05);
+      color: #dbeafe;
+      border: 1px solid rgba(255,255,255,0.08);
+      font-size: 0.88rem;
+      transform: translateZ(50px);
+    }
+
+    .title-box {
+      margin-top: 20px;
+      transform: translateZ(55px);
+    }
+
+    .title-box h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .title-box p {
+      color: var(--muted);
+      line-height: 1.7;
+    }
+
+    .stack {
+      margin-top: 26px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 14px;
+      transform: translateZ(60px);
+    }
+
+    .tech {
+      padding: 15px 16px;
+      border-radius: 18px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      color: #e2e8f0;
+      font-weight: 600;
+    }
+
+    .orbit {
+      position: absolute;
+      border: 1px solid rgba(255,255,255,0.07);
+      border-radius: 50%;
+      inset: 8%;
+      transform-style: preserve-3d;
+      animation: orbit 12s linear infinite;
+    }
+
+    .orb {
+      position: absolute;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--secondary));
+      box-shadow: 0 0 25px rgba(34,211,238,0.65);
+      top: -11px;
+      left: calc(50% - 11px);
+    }
+
+    section {
+      padding: 110px 0;
+      position: relative;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      margin-bottom: 14px;
+      text-align: center;
+    }
+
+    .section-text {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 46px;
+      color: var(--muted);
+      line-height: 1.8;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .glass-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      padding: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(16px);
+      transform-style: preserve-3d;
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+
+    .glass-card:hover {
+      border-color: rgba(255,255,255,0.18);
+    }
+
+    .glass-card h3 {
+      margin: 18px 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .glass-card p {
+      color: var(--muted);
+      line-height: 1.75;
+      font-size: 0.96rem;
+    }
+
+    .icon-box {
+      width: 56px;
+      height: 56px;
+      border-radius: 18px;
+      display: grid;
+      place-items: center;
+      font-size: 1.2rem;
+      background: linear-gradient(135deg, rgba(96,165,250,0.16), rgba(167,139,250,0.16));
+      border: 1px solid rgba(255,255,255,0.08);
+      transform: translateZ(35px);
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .project {
+      min-height: 280px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .project::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.01));
+      opacity: 0.9;
+    }
+
+    .project .thumb {
+      height: 180px;
+      border-radius: 22px;
+      background:
+        radial-gradient(circle at 30% 30%, rgba(96,165,250,0.35), transparent 30%),
+        radial-gradient(circle at 70% 40%, rgba(167,139,250,0.35), transparent 28%),
+        linear-gradient(135deg, #0b1120, #1e293b);
+      border: 1px solid rgba(255,255,255,0.07);
+      margin-bottom: 18px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .thumb::after {
+      content: "";
+      position: absolute;
+      width: 140px;
+      height: 140px;
+      border-radius: 28px;
+      right: -20px;
+      top: 18px;
+      background: linear-gradient(135deg, rgba(96,165,250,0.4), rgba(34,211,238,0.2));
+      transform: rotate(25deg);
+      filter: blur(2px);
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      padding: 7px 11px;
+      border-radius: 999px;
+      font-size: 0.82rem;
+      color: #dbeafe;
+      background: rgba(96,165,250,0.1);
+      border: 1px solid rgba(96,165,250,0.14);
+    }
+
+    .contact-box {
+      max-width: 760px;
+      margin: auto;
+      text-align: center;
+      padding: 34px;
+    }
+
+    .contact-box p {
+      color: var(--muted);
+      line-height: 1.85;
+      margin: 14px 0 24px;
+    }
+
+    .footer {
+      padding: 28px 0 50px;
+      text-align: center;
+      color: #7c8aa0;
+      font-size: 0.92rem;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+
+    @keyframes heroSpin {
+      0%, 100% { transform: rotateX(8deg) rotateY(-12deg); }
+      25% { transform: rotateX(14deg) rotateY(8deg); }
+      50% { transform: rotateX(4deg) rotateY(16deg); }
+      75% { transform: rotateX(12deg) rotateY(-4deg); }
+    }
+
+    @keyframes orbit {
+      from { transform: rotateZ(0deg) rotateX(72deg); }
+      to { transform: rotateZ(360deg) rotateX(72deg); }
+    }
+
+    @media (max-width: 980px) {
+      .hero-grid,
+      .cards,
+      .projects {
+        grid-template-columns: 1fr;
+      }
+
+      .scene {
+        min-height: 460px;
+      }
+
+      .links {
+        display: none;
+      }
+
+      .hero {
+        padding-top: 24px;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cta,
+      .stats {
+        flex-direction: column;
+      }
+
+      .btn,
+      .stat {
+        width: 100%;
+      }
+
+      .layer.front {
+        padding: 20px;
+      }
+
+      .stack {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
 </head>
-
 <body>
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="brand">YM.</a>
+      <div class="links">
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
 
-<header>
-<h1>Yahia Mohamed</h1>
-<p>Frontend Web Developer</p>
-</header>
+  <header class="hero" id="home">
+    <div class="container hero-grid">
+      <div>
+        <div class="badge"><span class="dot"></span> Available for freelance work</div>
+        <h1><span class="gradient">Frontend Developer</span><br>& 3D Web Designer</h1>
+        <p class="lead">
+          I build modern landing pages, animated websites, and visually strong digital experiences with smooth motion, bold UI, and clean code.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">See My Work</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+        <div class="stats">
+          <div class="stat">
+            <strong>12+</strong>
+            <span>Projects built</span>
+          </div>
+          <div class="stat">
+            <strong>3D</strong>
+            <span>Interactive visuals</span>
+          </div>
+          <div class="stat">
+            <strong>Fast</strong>
+            <span>Responsive websites</span>
+          </div>
+        </div>
+      </div>
 
-<div class="section">
-<h2>About Me</h2>
-<p>I build modern websites and web apps using modern technologies.</p>
-</div>
+      <div class="scene">
+        <div class="card-3d" id="heroCard">
+          <div class="glow"></div>
+          <div class="orbit"><div class="orb"></div></div>
+          <div class="layer back"></div>
+          <div class="layer mid"></div>
+          <div class="layer front">
+            <div class="panel-top">
+              <div class="mini-logo">YM</div>
+              <div class="chip">Creative UI • Motion</div>
+            </div>
+            <div class="title-box">
+              <h2>Build Better Digital Presence</h2>
+              <p>Beautiful interfaces, 3D depth, smooth animation, and portfolio websites that make a strong first impression.</p>
+            </div>
+            <div class="stack">
+              <div class="tech">HTML / CSS</div>
+              <div class="tech">JavaScript</div>
+              <div class="tech">React</div>
+              <div class="tech">GSAP Style UI</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-<div class="section">
-<h2>Skills</h2>
-<p>HTML • CSS • JavaScript • React • UI Design</p>
-</div>
+  <section id="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-text">
+        I design and develop polished websites with a strong visual identity. My focus is on landing pages, personal portfolios, and product websites that feel modern and premium.
+      </p>
+      <div class="cards">
+        <div class="glass-card tilt">
+          <div class="icon-box">⚡</div>
+          <h3>Fast UI</h3>
+          <p>I build clean, responsive interfaces that look sharp on desktop and mobile without unnecessary complexity.</p>
+        </div>
+        <div class="glass-card tilt">
+          <div class="icon-box">🧊</div>
+          <h3>Glassmorphism</h3>
+          <p>Modern visual layers, glowing backgrounds, and strong depth effects that give your site a premium look.</p>
+        </div>
+        <div class="glass-card tilt">
+          <div class="icon-box">🌀</div>
+          <h3>Smooth Motion</h3>
+          <p>Subtle animation and 3D interaction that make the website feel alive without distracting the visitor.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="section">
-<h2>Projects</h2>
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">What I Can Build</h2>
+      <p class="section-text">
+        From simple portfolios to more advanced showcase pages, I can create a site that presents your work clearly and impresses from the first second.
+      </p>
+      <div class="cards">
+        <div class="glass-card tilt">
+          <h3>Portfolio Websites</h3>
+          <p>Show your identity, projects, and skills in a stylish way that helps clients trust your work.</p>
+        </div>
+        <div class="glass-card tilt">
+          <h3>Landing Pages</h3>
+          <p>Focused pages designed to present a service, product, or offer with clear CTA buttons and strong layout.</p>
+        </div>
+        <div class="glass-card tilt">
+          <h3>Creative Redesigns</h3>
+          <p>Turn a plain static website into something more cinematic with better spacing, lighting, and motion.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="projects">
+  <section id="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-text">
+        Replace these cards with your real projects later. For now, they give your portfolio a premium structure and modern presentation.
+      </p>
+      <div class="projects">
+        <div class="glass-card project tilt">
+          <div class="thumb"></div>
+          <h3>Agency Landing Page</h3>
+          <p>High-converting layout with modern hero section, glowing elements, and smooth call-to-action flow.</p>
+          <div class="tags">
+            <span class="tag">Responsive</span>
+            <span class="tag">Modern UI</span>
+            <span class="tag">Animation</span>
+          </div>
+        </div>
+        <div class="glass-card project tilt">
+          <div class="thumb"></div>
+          <h3>Developer Portfolio</h3>
+          <p>Personal website for showcasing projects, skills, and contact info with a clean and futuristic design.</p>
+          <div class="tags">
+            <span class="tag">Portfolio</span>
+            <span class="tag">3D Depth</span>
+            <span class="tag">Dark Mode</span>
+          </div>
+        </div>
+        <div class="glass-card project tilt">
+          <div class="thumb"></div>
+          <h3>Product Showcase</h3>
+          <p>Minimal product page with bold visuals and layered sections to present features more clearly.</p>
+          <div class="tags">
+            <span class="tag">Showcase</span>
+            <span class="tag">Clean Layout</span>
+            <span class="tag">Glass Effect</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Project 1</h3>
-<p>Landing page design</p>
-<a href="#">View Project</a>
-</div>
+  <section id="contact">
+    <div class="container">
+      <div class="glass-card contact-box tilt">
+        <h2 class="section-title">Let’s Work Together</h2>
+        <p>
+          Put your real email, WhatsApp link, GitHub, or LinkedIn here. This section is the one clients will use to reach you, so keep it simple and clear.
+        </p>
+        <div class="cta" style="justify-content:center;">
+          <a class="btn primary" href="mailto:your@email.com">Email Me</a>
+          <a class="btn" href="https://github.com/yourusername" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<div class="card">
-<h3>Project 2</h3>
-<p>E-commerce website</p>
-<a href="#">View Project</a>
-</div>
+  <div class="footer">
+    © 2026 Yahia Mohamed — Built with HTML, CSS, and JavaScript.
+  </div>
 
-<div class="card">
-<h3>Project 3</h3>
-<p>Portfolio website</p>
-<a href="#">View Project</a>
-</div>
+  <script>
+    const tiltItems = document.querySelectorAll('.tilt');
 
-</div>
-</div>
+    tiltItems.forEach((card) => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const midX = rect.width / 2;
+        const midY = rect.height / 2;
+        const rotateY = ((x - midX) / midX) * 7;
+        const rotateX = ((midY - y) / midY) * 7;
+        card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-4px)`;
+      });
 
-<div class="section">
-<h2>Contact</h2>
-<p>Email: you@example.com</p>
-<p>GitHub: github.com/username</p>
-</div>
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg) translateY(0px)';
+      });
+    });
 
-<footer>
-© 2026 Yahia Mohamed
-</footer>
+    const heroCard = document.getElementById('heroCard');
 
+    window.addEventListener('mousemove', (e) => {
+      const x = (e.clientX / window.innerWidth - 0.5) * 12;
+      const y = (e.clientY / window.innerHeight - 0.5) * -12;
+      heroCard.style.transform = `rotateX(${8 + y * 0.35}deg) rotateY(${-12 + x * 0.55}deg)`;
+    });
+  </script>
 </body>
 </html>
