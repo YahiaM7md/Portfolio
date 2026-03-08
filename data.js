@@ -456,7 +456,7 @@ const PROJECTS = [
     fullDescription: "A complete social media design campaign for Pulse Fitness including post templates, story designs, highlight covers, ad creatives, and a content calendar. The system is fully editable and handed off to the in-house team as Figma templates.",
     tools: ["Adobe Photoshop","Adobe Illustrator"],
     cover: "assets/graphic/project7/cover.jpg",
-    gallery: ["assets/graphic/project7/1.png", "assets/graphic/project7/2.png", "assets/graphic/project7/3.jpg", "assets/graphic/project7/4.jpg", "assets/graphic/project7/5.jpg", "assets/graphic/project7/6.jpg", "assets/graphic/project7/7.png", "assets/graphic/project7/8.png", "assets/graphic/project7/9.png","assets/graphic/project7/10.png","assets/graphic/project7/11.png"],
+    gallery: ["assets/graphic/project7/1.png", "assets/graphic/project7/2.png", "assets/graphic/project7/3.jpg", "assets/graphic/project7/4.jpg", "assets/graphic/project7/5.jpg", "assets/graphic/project7/6.jpg", "assets/graphic/project7/7.jpg", "assets/graphic/project7/8.jpg", "assets/graphic/project7/9.png","assets/graphic/project7/10.png","assets/graphic/project7/11.png"],
     // brandOverview: "High energy, bold typography, and dynamic composition. The campaign uses a Green-and-yellow palette with aggressive diagonal layouts to communicate intensity and motivation.",
     // colors: ["#0A0A0A", "#FF4500", "#FFFFFF", "#1C1C1C"],
     // typography: ["Bebas Neue", "DM Sans"],
