@@ -353,8 +353,8 @@ const PROJECTS = [
 
     // PUT PROJECT GALLERY IMAGE PATHS HERE ↓
     // Example: ["assets/graphic/luxe-coffee/1.jpg", "assets/graphic/luxe-coffee/2.jpg"]
-    gallery: ["assets/graphic/project1/1.jpg", "assets/graphic/project1/2.jpg", "assets/graphic/project1/3.jpg", "assets/graphic/project1/4.png", "assets/graphic/project1/5.png", "assets/graphic/project1/6.jpg", "assets/graphic/project1/7.jpg", "assets/graphic/project1/8.jpg", "assets/graphic/project1/9.jpg", "assets/graphic/project1/10.jpg", "assets/graphic/project1/11.png", "assets/graphic/project1/12.jpg", "assets/graphic/project1/13.jpg", "assets/graphic/project1/14.png", "assets/graphic/project1/15.png", "assets/graphic/project1/16.png", "assets/graphic/project1/17.png", "assets/graphic/project1/18.jpg","assets/graphic/project1/19.jpg","assets/graphic/project1/20.jpg"],
-
+    gallery: ["assets/graphic/project1/1.jpg", "assets/graphic/project1/2.jpg", "assets/graphic/project1/3.jpg", "assets/graphic/project1/4.png", "assets/graphic/project1/5.png", "assets/graphic/project1/6.jpg", "assets/graphic/project1/7.jpg", "assets/graphic/project1/8.jpg", "assets/graphic/project1/9.jpg", "assets/graphic/project1/10.jpg", "assets/graphic/project1/11.png", "assets/graphic/project1/12.jpg", "assets/graphic/project1/13.jpg", "assets/graphic/project1/14.png", "assets/graphic/project1/15.png", "assets/graphic/project1/16.jpg", "assets/graphic/project1/17.png", "assets/graphic/project1/18.jpg","assets/graphic/project1/19.jpg","assets/graphic/project1/20.jpg"],
+   
     // brandOverview: "poster design",
     // Color palette: add HEX codes of colors used in the project
     // colors: ["#1A1208", "#C8A96E", "#F5F0E8", "#2C1810"],
@@ -371,7 +371,7 @@ const PROJECTS = [
     fullDescription: "A complete social media design campaign for Pulse Fitness including post templates, story designs, highlight covers, ad creatives, and a content calendar. The system is fully editable and handed off to the in-house team as Figma templates.",
     tools: ["Adobe Photoshop"],
     cover: "assets/graphic/project4/cover.jpg",
-    gallery: ["assets/graphic/project4/1.jpg", "assets/graphic/project4/2.jpg", "assets/graphic/project4/3.jpg", "assets/graphic/project4/4.jpg", "assets/graphic/project4/5.jpg", "assets/graphic/project4/6.jpg", "assets/graphic/project4/7.jpg", "assets/graphic/project4/8.jpg", "assets/graphic/project4/9.png", "assets/graphic/project4/10.jpg", "assets/graphic/project4/11.png", "assets/graphic/project4/12.png", "assets/graphic/project4/13.jpg", "assets/graphic/project4/14.jpg", "assets/graphic/project4/15.png"],
+    gallery: ["assets/graphic/project4/1.jpg", "assets/graphic/project4/2.jpg", "assets/graphic/project4/3.jpg", "assets/graphic/project4/4.jpg", "assets/graphic/project4/5.jpg", "assets/graphic/project4/6.jpg", "assets/graphic/project4/7.jpg", "assets/graphic/project4/8.jpg", "assets/graphic/project4/9.jpg", "assets/graphic/project4/10.jpg", "assets/graphic/project4/11.png", "assets/graphic/project4/12.png", "assets/graphic/project4/13.jpg", "assets/graphic/project4/14.jpg", "assets/graphic/project4/15.png"],
     brandOverview: "High energy, bold typography, and dynamic composition. The campaign uses a Green-and-yellow palette with aggressive diagonal layouts to communicate intensity and motivation.",
     // colors: ["#0A0A0A", "#FF4500", "#FFFFFF", "#1C1C1C"],
     // typography: ["Bebas Neue", "DM Sans"],
@@ -391,7 +391,7 @@ const PROJECTS = [
 
     // PUT PROJECT GALLERY IMAGE PATHS HERE ↓
     // Example: ["assets/graphic/luxe-coffee/1.jpg", "assets/graphic/luxe-coffee/2.jpg"]
-    gallery: ["assets/graphic/project2/1.jpg", "assets/graphic/project2/2.jpg", "assets/graphic/project2/3.png", "assets/graphic/project2/4.jpg", "assets/graphic/project2/5.png", "assets/graphic/project2/6.png", "assets/graphic/project2/7.jpg", "assets/graphic/project2/8.jpg", "assets/graphic/project2/9.png","assets/graphic/project2/10.png","assets/graphic/project2/11.png","assets/graphic/project2/12.png", "assets/graphic/project2/13.png","assets/graphic/project2/14.png","assets/graphic/project2/15.png","assets/graphic/project2/16.png","assets/graphic/project2/17.png","assets/graphic/project2/18.png","assets/graphic/project2/19.png","assets/graphic/project2/20.jpg","assets/graphic/project2/21.png","assets/graphic/project2/22.png"],
+    gallery: ["assets/graphic/project2/1.jpg", "assets/graphic/project2/2.jpg", "assets/graphic/project2/3.png", "assets/graphic/project2/4.jpg", "assets/graphic/project2/5.png", "assets/graphic/project2/6.png", "assets/graphic/project2/7.jpg", "assets/graphic/project2/8.jpg", "assets/graphic/project2/9.png","assets/graphic/project2/10.png","assets/graphic/project2/11.png","assets/graphic/project2/12.png", "assets/graphic/project2/13.png","assets/graphic/project2/14.png","assets/graphic/project2/15.png","assets/graphic/project2/16.png","assets/graphic/project2/17.png","assets/graphic/project2/18.png","assets/graphic/project2/19.png","assets/graphic/project2/20(1).jpg","assets/graphic/project2/21.png","assets/graphic/project2/22.png"],
 
     // brandOverview: "poster design",
     // Color palette: add HEX codes of colors used in the project
@@ -409,7 +409,7 @@ const PROJECTS = [
     // fullDescription: "Verdure is an organic food brand targeting health-conscious consumers. The packaging design needed to stand out on crowded supermarket shelves while communicating purity, nature, and authenticity. The final system covers 12 SKUs across 3 product lines with a consistent visual language.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
     cover: "assets/graphic/project3/cover.png",
-    gallery: ["assets/graphic/project3/1.png", "assets/graphic/project3/2.jpg", "assets/graphic/project3/3.jpg", "assets/graphic/project3/4.jpg", "assets/graphic/project3/5.png", "assets/graphic/project3/6.png", "assets/graphic/project3/7.png", "assets/graphic/project3/8.png", "assets/graphic/project3/9.png", "assets/graphic/project3/10.png", "assets/graphic/project3/11.png", "assets/graphic/project3/12.jpg", "assets/graphic/project3/13.png", "assets/graphic/project3/14.png", "assets/graphic/project3/15.jpg", "assets/graphic/project3/16.jpg", "assets/graphic/project3/17.jpg"],
+    gallery: ["assets/graphic/project3/1.png", "assets/graphic/project3/2.jpg", "assets/graphic/project3/3.jpg", "assets/graphic/project3/4.jpg", "assets/graphic/project3/5.jpg", "assets/graphic/project3/6.jpg", "assets/graphic/project3/7.jpg", "assets/graphic/project3/8.jpg", "assets/graphic/project3/9.png", "assets/graphic/project3/10.jpg", "assets/graphic/project3/11.png", "assets/graphic/project3/12.jpg", "assets/graphic/project3/13.png", "assets/graphic/project3/14.png", "assets/graphic/project3/15.jpg", "assets/graphic/project3/16.jpg", "assets/graphic/project3/17.jpg"],
     brandOverview: "Inspired by botanical illustration and editorial minimalism. Each product line has its own accent color within a cohesive system, making the full lineup instantly recognizable as a family.",
     // colors: ["#2D5016", "#8BC34A", "#F9F6F0", "#D4A853"],
     // typography: ["Playfair Display", "Nunito Sans"],
@@ -437,7 +437,7 @@ const PROJECTS = [
     // fullDescription: "A complete social media design campaign for Pulse Fitness including post templates, story designs, highlight covers, ad creatives, and a content calendar. The system is fully editable and handed off to the in-house team as Figma templates.",
     tools: ["Adobe Photoshop","Adobe Illustrator"],
     cover: "assets/graphic/project6/cover.png",
-    gallery: ["assets/graphic/project6/1.png", "assets/graphic/project6/2.jpg", "assets/graphic/project6/3.png", "assets/graphic/project6/4.jpg", "assets/graphic/project6/5.png", "assets/graphic/project6/6.jpg", "assets/graphic/project6/7.png", "assets/graphic/project6/8.png", "assets/graphic/project6/9.png"],
+    gallery: ["assets/graphic/project6/1.png", "assets/graphic/project6/2.jpg", "assets/graphic/project6/4.jpg", "assets/graphic/project6/5.png", "assets/graphic/project6/6.jpg", "assets/graphic/project6/7.png", "assets/graphic/project6/8.png", "assets/graphic/project6/9.png"],
     // brandOverview: "High energy, bold typography, and dynamic composition. The campaign uses a Green-and-yellow palette with aggressive diagonal layouts to communicate intensity and motivation.",
     // colors: ["#0A0A0A", "#FF4500", "#FFFFFF", "#1C1C1C"],
     // typography: ["Bebas Neue", "DM Sans"],
