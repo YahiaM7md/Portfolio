@@ -295,14 +295,19 @@ const SERVICES = [
     description: "Eye-catching social media visuals, posters, post templates, and content graphics that stop the scroll.",
   },
   {
-    icon: "ph-presentation-chart",
-    title: "Presentation Design",
-    description: "Transforming boring slides into premium, narrative-driven presentations that impress any audience.",
-  },
-  {
     icon: "ph-pen-nib",
     title: "Graphic Design",
     description: "Print and digital design — brochures, posters, packaging, ads, and all visual communication materials.",
+  },
+  {
+    icon: "ph-presentation-chart",
+    title: "Logo Design",
+    description: "Crafting unique and memorable logos that reflect your brand’s identity and leave a strong visual impression.",
+  },
+   {
+    icon: "ph-pen-nib",
+    title: "Packaging Design",
+    description: "Designing creative and functional product packaging that stands out on shelves and strengthens brand recognition.",
   },
 ];
 
