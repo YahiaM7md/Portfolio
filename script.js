@@ -26,7 +26,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
   // Pull in all data from data.js (loaded before this script)
-  const { PERSONAL_INFO, SOCIAL_LINKS, SKILLS, SERVICES, PROJECTS } = window.PORTFOLIO_DATA;
+  const { PERSONAL_INFO, SOCIAL_LINKS, SKILLS, SERVICES, PROJECTS, EXPERIENCE, TRAINING } = window.PORTFOLIO_DATA;
 
   // ================================================================
   // 1. RENDER PERSONAL INFO INTO THE PAGE
@@ -811,6 +811,58 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.service-card').forEach((card, i) => {
     card.style.transitionDelay = `${i * 0.07}s`;
   });
+
+  // ================================================================
+  // EXPERIENCE & TRAINING TIMELINE RENDERING
+  // ================================================================
+  // ================================================================
+  // TRAINING TIMELINE RENDERING
+  // ================================================================
+  function buildTimelineItem(item, index) {
+    const typeLabels = {
+      work: 'Full-time', freelance: 'Freelance', internship: 'Internship',
+      'part-time': 'Part-time', certificate: 'Certificate', course: 'Course',
+    };
+    const typeColors = {
+      work: 'exp-type-work', freelance: 'exp-type-freelance', internship: 'exp-type-intern',
+      'part-time': 'exp-type-part', certificate: 'exp-type-cert', course: 'exp-type-course',
+    };
+    const tagsHTML = (item.tags || []).map(t => `<span class="exp-tag">${t}</span>`).join('');
+    return `
+      <div class="timeline-item reveal" style="--item-index:${index}">
+        <div class="timeline-dot">
+          <i class="ph ${item.icon || 'ph-circle'}"></i>
+        </div>
+        <div class="timeline-card glass-card">
+          <div class="timeline-card-header">
+            <div class="timeline-title-group">
+              <h3 class="timeline-title">${item.title}</h3>
+              <span class="timeline-company">${item.company}</span>
+            </div>
+            <div class="timeline-meta">
+              <span class="timeline-period"><i class="ph ph-calendar-blank"></i>${item.period}</span>
+              <span class="exp-type-badge ${typeColors[item.type] || 'exp-type-work'}">${typeLabels[item.type] || item.type}</span>
+            </div>
+          </div>
+          <p class="timeline-desc">${item.description}</p>
+          <div class="exp-tags">${tagsHTML}</div>
+        </div>
+      </div>
+    `;
+  }
+
+  function renderTimeline(containerId, items) {
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    if (!items || items.length === 0) {
+      container.innerHTML = `<div class="exp-empty">No entries yet. Add some in data.js!</div>`;
+      return;
+    }
+    container.innerHTML = items.map((item, i) => buildTimelineItem(item, i)).join('');
+    container.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+  }
+
+  renderTimeline('trainingTimeline', TRAINING);
 
   // ================================================================
   // 15. SCROLL PROGRESS BAR
