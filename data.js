@@ -482,9 +482,9 @@ const PROJECTS = [
   },
 
 {
-    id: "Sotify Analysis",
+    id: "Spotify Analysis",
     category: "data",
-    title: "Sotify Data Analysis",
+    title: "Spotify Data Analysis",
     shortDescription: "Cleaned and analyzed Sotify music streaming data and built an interactive dashboard to explore listening patterns, peak demand times, and key trends that can help improve operational decisions.",
     fullDescription: "This project analyzes Spotify streaming data using Power BI to explore song popularity, streaming trends, and audio features. I used Python to call a Spotify API to retrieve album images, stored them in Excel, and used HTML to display the images inside the dashboard. The dashboard interface was designed in Photoshop to match a Spotify-style layout.",
     tools: ["Power BI", "photoshop", "HTML", "Python"],
