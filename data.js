@@ -295,19 +295,14 @@ const SERVICES = [
     description: "Eye-catching social media visuals, posters, post templates, and content graphics that stop the scroll.",
   },
   {
+    icon: "ph-presentation-chart",
+    title: "Presentation Design",
+    description: "Transforming boring slides into premium, narrative-driven presentations that impress any audience.",
+  },
+  {
     icon: "ph-pen-nib",
     title: "Graphic Design",
     description: "Print and digital design — brochures, posters, packaging, ads, and all visual communication materials.",
-  },
-  {
-    icon: "ph-presentation-chart",
-    title: "Logo Design",
-    description: "Crafting unique and memorable logos that reflect your brand’s identity and leave a strong visual impression.",
-  },
-   {
-    icon: "ph-pen-nib",
-    title: "Packaging Design",
-    description: "Designing creative and functional product packaging that stands out on shelves and strengthens brand recognition.",
   },
 ];
 
@@ -358,8 +353,8 @@ const PROJECTS = [
 
     // PUT PROJECT GALLERY IMAGE PATHS HERE ↓
     // Example: ["assets/graphic/luxe-coffee/1.jpg", "assets/graphic/luxe-coffee/2.jpg"]
-    gallery: ["assets/graphic/project1/1.jpg", "assets/graphic/project1/2.jpg", "assets/graphic/project1/3.jpg", "assets/graphic/project1/4.png", "assets/graphic/project1/5.png", "assets/graphic/project1/6.jpg", "assets/graphic/project1/7.jpg", "assets/graphic/project1/8.jpg", "assets/graphic/project1/9.jpg", "assets/graphic/project1/10.jpg", "assets/graphic/project1/11.png", "assets/graphic/project1/12.jpg", "assets/graphic/project1/13.jpg", "assets/graphic/project1/14.png", "assets/graphic/project1/15.png", "assets/graphic/project1/16.jpg", "assets/graphic/project1/17.png", "assets/graphic/project1/18.jpg","assets/graphic/project1/19.jpg","assets/graphic/project1/20.jpg"],
-   
+    gallery: ["assets/graphic/project1/1.jpg", "assets/graphic/project1/2.jpg", "assets/graphic/project1/3.jpg", "assets/graphic/project1/4.png", "assets/graphic/project1/5.png", "assets/graphic/project1/6.jpg", "assets/graphic/project1/7.jpg", "assets/graphic/project1/8.jpg", "assets/graphic/project1/9.jpg", "assets/graphic/project1/10.jpg", "assets/graphic/project1/11.png", "assets/graphic/project1/12.jpg", "assets/graphic/project1/13.jpg", "assets/graphic/project1/14.png", "assets/graphic/project1/15.png", "assets/graphic/project1/16.png", "assets/graphic/project1/17.png", "assets/graphic/project1/18.jpg","assets/graphic/project1/19.jpg","assets/graphic/project1/20.jpg"],
+
     // brandOverview: "poster design",
     // Color palette: add HEX codes of colors used in the project
     // colors: ["#1A1208", "#C8A96E", "#F5F0E8", "#2C1810"],
@@ -376,7 +371,7 @@ const PROJECTS = [
     fullDescription: "A complete social media design campaign for Pulse Fitness including post templates, story designs, highlight covers, ad creatives, and a content calendar. The system is fully editable and handed off to the in-house team as Figma templates.",
     tools: ["Adobe Photoshop"],
     cover: "assets/graphic/project4/cover.jpg",
-    gallery: ["assets/graphic/project4/1.jpg", "assets/graphic/project4/2.jpg", "assets/graphic/project4/3.jpg", "assets/graphic/project4/4.jpg", "assets/graphic/project4/5.jpg", "assets/graphic/project4/6.jpg", "assets/graphic/project4/7.jpg", "assets/graphic/project4/8.jpg", "assets/graphic/project4/9.jpg", "assets/graphic/project4/10.jpg", "assets/graphic/project4/11.png", "assets/graphic/project4/12.png", "assets/graphic/project4/13.jpg", "assets/graphic/project4/14.jpg", "assets/graphic/project4/15.png"],
+    gallery: ["assets/graphic/project4/1.jpg", "assets/graphic/project4/2.jpg", "assets/graphic/project4/3.jpg", "assets/graphic/project4/4.jpg", "assets/graphic/project4/5.jpg", "assets/graphic/project4/6.jpg", "assets/graphic/project4/7.jpg", "assets/graphic/project4/8.jpg", "assets/graphic/project4/9.png", "assets/graphic/project4/10.jpg", "assets/graphic/project4/11.png", "assets/graphic/project4/12.png", "assets/graphic/project4/13.jpg", "assets/graphic/project4/14.jpg", "assets/graphic/project4/15.png"],
     brandOverview: "High energy, bold typography, and dynamic composition. The campaign uses a Green-and-yellow palette with aggressive diagonal layouts to communicate intensity and motivation.",
     // colors: ["#0A0A0A", "#FF4500", "#FFFFFF", "#1C1C1C"],
     // typography: ["Bebas Neue", "DM Sans"],
@@ -396,7 +391,7 @@ const PROJECTS = [
 
     // PUT PROJECT GALLERY IMAGE PATHS HERE ↓
     // Example: ["assets/graphic/luxe-coffee/1.jpg", "assets/graphic/luxe-coffee/2.jpg"]
-    gallery: ["assets/graphic/project2/1.jpg", "assets/graphic/project2/2.jpg", "assets/graphic/project2/3.png", "assets/graphic/project2/4.jpg", "assets/graphic/project2/5.png", "assets/graphic/project2/6.png", "assets/graphic/project2/7.jpg", "assets/graphic/project2/8.jpg", "assets/graphic/project2/9.png","assets/graphic/project2/10.png","assets/graphic/project2/11.png","assets/graphic/project2/12.png", "assets/graphic/project2/13.png","assets/graphic/project2/14.png","assets/graphic/project2/15.png","assets/graphic/project2/16.png","assets/graphic/project2/17.png","assets/graphic/project2/18.png","assets/graphic/project2/19.png","assets/graphic/project2/20(1).jpg","assets/graphic/project2/21.png","assets/graphic/project2/22.png"],
+    gallery: ["assets/graphic/project2/1.jpg", "assets/graphic/project2/2.jpg", "assets/graphic/project2/3.png", "assets/graphic/project2/4.jpg", "assets/graphic/project2/5.png", "assets/graphic/project2/6.png", "assets/graphic/project2/7.jpg", "assets/graphic/project2/8.jpg", "assets/graphic/project2/9.png","assets/graphic/project2/10.png","assets/graphic/project2/11.png","assets/graphic/project2/12.png", "assets/graphic/project2/13.png","assets/graphic/project2/14.png","assets/graphic/project2/15.png","assets/graphic/project2/16.png","assets/graphic/project2/17.png","assets/graphic/project2/18.png","assets/graphic/project2/19.png","assets/graphic/project2/20.jpg","assets/graphic/project2/21.png","assets/graphic/project2/22.png"],
 
     // brandOverview: "poster design",
     // Color palette: add HEX codes of colors used in the project
@@ -414,7 +409,7 @@ const PROJECTS = [
     // fullDescription: "Verdure is an organic food brand targeting health-conscious consumers. The packaging design needed to stand out on crowded supermarket shelves while communicating purity, nature, and authenticity. The final system covers 12 SKUs across 3 product lines with a consistent visual language.",
     tools: ["Adobe Illustrator", "Adobe Photoshop"],
     cover: "assets/graphic/project3/cover.png",
-    gallery: ["assets/graphic/project3/1.png", "assets/graphic/project3/2.jpg", "assets/graphic/project3/3.jpg", "assets/graphic/project3/4.jpg", "assets/graphic/project3/5.jpg", "assets/graphic/project3/6.jpg", "assets/graphic/project3/7.jpg", "assets/graphic/project3/8.jpg", "assets/graphic/project3/9.png", "assets/graphic/project3/10.jpg", "assets/graphic/project3/11.png", "assets/graphic/project3/12.jpg", "assets/graphic/project3/13.png", "assets/graphic/project3/14.png", "assets/graphic/project3/15.jpg", "assets/graphic/project3/16.jpg", "assets/graphic/project3/17.jpg"],
+    gallery: ["assets/graphic/project3/1.png", "assets/graphic/project3/2.jpg", "assets/graphic/project3/3.jpg", "assets/graphic/project3/4.jpg", "assets/graphic/project3/5.png", "assets/graphic/project3/6.png", "assets/graphic/project3/7.png", "assets/graphic/project3/8.png", "assets/graphic/project3/9.png", "assets/graphic/project3/10.png", "assets/graphic/project3/11.png", "assets/graphic/project3/12.jpg", "assets/graphic/project3/13.png", "assets/graphic/project3/14.png", "assets/graphic/project3/15.jpg", "assets/graphic/project3/16.jpg", "assets/graphic/project3/17.jpg"],
     brandOverview: "Inspired by botanical illustration and editorial minimalism. Each product line has its own accent color within a cohesive system, making the full lineup instantly recognizable as a family.",
     // colors: ["#2D5016", "#8BC34A", "#F9F6F0", "#D4A853"],
     // typography: ["Playfair Display", "Nunito Sans"],
@@ -442,7 +437,7 @@ const PROJECTS = [
     // fullDescription: "A complete social media design campaign for Pulse Fitness including post templates, story designs, highlight covers, ad creatives, and a content calendar. The system is fully editable and handed off to the in-house team as Figma templates.",
     tools: ["Adobe Photoshop","Adobe Illustrator"],
     cover: "assets/graphic/project6/cover.png",
-    gallery: ["assets/graphic/project6/1.png", "assets/graphic/project6/2.jpg", "assets/graphic/project6/4.jpg", "assets/graphic/project6/5.png", "assets/graphic/project6/6.jpg", "assets/graphic/project6/7.png", "assets/graphic/project6/8.png", "assets/graphic/project6/9.png"],
+    gallery: ["assets/graphic/project6/1.png", "assets/graphic/project6/2.jpg", "assets/graphic/project6/3.png", "assets/graphic/project6/4.jpg", "assets/graphic/project6/5.png", "assets/graphic/project6/6.jpg", "assets/graphic/project6/7.png", "assets/graphic/project6/8.png", "assets/graphic/project6/9.png"],
     // brandOverview: "High energy, bold typography, and dynamic composition. The campaign uses a Green-and-yellow palette with aggressive diagonal layouts to communicate intensity and motivation.",
     // colors: ["#0A0A0A", "#FF4500", "#FFFFFF", "#1C1C1C"],
     // typography: ["Bebas Neue", "DM Sans"],
@@ -456,7 +451,7 @@ const PROJECTS = [
     fullDescription: "A complete social media design campaign for Pulse Fitness including post templates, story designs, highlight covers, ad creatives, and a content calendar. The system is fully editable and handed off to the in-house team as Figma templates.",
     tools: ["Adobe Photoshop","Adobe Illustrator"],
     cover: "assets/graphic/project7/cover.jpg",
-    gallery: ["assets/graphic/project7/1.png", "assets/graphic/project7/2.png", "assets/graphic/project7/3.jpg", "assets/graphic/project7/4.jpg", "assets/graphic/project7/5.jpg", "assets/graphic/project7/6.jpg", "assets/graphic/project7/7.jpg", "assets/graphic/project7/8.jpg", "assets/graphic/project7/9.png","assets/graphic/project7/10.png","assets/graphic/project7/11.png"],
+    gallery: ["assets/graphic/project7/1.png", "assets/graphic/project7/2.png", "assets/graphic/project7/3.jpg", "assets/graphic/project7/4.jpg", "assets/graphic/project7/5.jpg", "assets/graphic/project7/6.jpg", "assets/graphic/project7/7.png", "assets/graphic/project7/8.png", "assets/graphic/project7/9.png","assets/graphic/project7/10.png","assets/graphic/project7/11.png"],
     // brandOverview: "High energy, bold typography, and dynamic composition. The campaign uses a Green-and-yellow palette with aggressive diagonal layouts to communicate intensity and motivation.",
     // colors: ["#0A0A0A", "#FF4500", "#FFFFFF", "#1C1C1C"],
     // typography: ["Bebas Neue", "DM Sans"],
@@ -466,70 +461,105 @@ const PROJECTS = [
      DATA ANALYSIS PROJECTS
      ADD NEW DATA PROJECT HERE ↓
   ────────────────────────────────────────────────────────────── */
-  {
-    id: "sales-dashboard",
+{
+    id: "Uber Analysis",
     category: "data",
-    title: "Sales Dashboard",
-    shortDescription: "Interactive Power BI dashboard analyzing $2M+ in annual sales",
-    fullDescription: "Built an end-to-end sales analytics solution for a mid-size e-commerce company. The project involved cleaning 3 years of raw transaction data in Excel, building a normalized data model in Power Query, and creating an interactive Power BI report with 8 pages covering revenue, product performance, customer behavior, and regional trends.",
-    tools: ["Power BI", "Excel", "Power Query", "DAX"],
-
-    // PUT DASHBOARD SCREENSHOT PATH HERE ↓
-    cover: "",
-
-    gallery: ["", ""],
-    problemStatement: "The client had no central reporting tool. Their team was manually compiling weekly Excel reports from 4 different systems — a process that took 6 hours every week and was prone to errors.",
-    datasetInfo: "3 years of transaction data (2021–2023), ~180,000 rows. Sources: Shopify export, CRM system, inventory management tool, and Google Analytics. Merged and cleaned in Power Query.",
+    title: "Uber Data Analysis",
+    shortDescription: "Cleaned and analyzed Uber trip data and built an interactive dashboard to explore ride patterns, peak demand times, and key trends that can help improve operational decisions.",
+    fullDescription: "This project focuses on analyzing Uber ride data to understand ride demand, operational performance, and cancellation behavior.The dataset was cleaned and transformed, then an interactive dashboard was built to visualize key metrics such as total bookings, revenue, ride completion rate, and cancellation patterns.The dashboard provides insights into customer behavior, peak booking times, vehicle performance, and operational efficiency to support better business decisions.",
+    tools: ["Power BI"],
+    cover: "assets/data/project2/cover.jpg",
+    gallery: ["assets/data/project2/0.png","assets/data/project2/1.jpg","assets/data/project2/2.jpg","assets/data/project2/3.jpg","assets/data/project2/4.jpg","assets/data/project2/5.jpg","assets/data/project2/6.jpg","assets/data/project2/7.jpg","assets/data/project2/8.png","assets/data/project2/9.png"],
+    problemStatement: "Ride-hailing companies generate large amounts of trip data, but without proper analysis it is difficult to understand demand patterns, cancellations, and operational performance. This project analyzes Uber ride data to identify booking trends and improve service efficiency.",
+    datasetInfo: "The dataset contains Uber ride transaction data including booking details, trip information, vehicle types, ride status, and cancellation reasons.Each record represents a ride request with multiple attributes related to the trip, driver, customer, and payment.",
     insights: [
-      "Top 20% of customers generated 68% of total revenue — classic Pareto pattern",
-      "Q4 drove 41% of annual revenue, with peak 3 weeks before Christmas",
-      "Product category 'Home & Kitchen' had the highest margin (34%) but lowest traffic",
-      "Mobile conversion rate (1.8%) was 3x lower than desktop (5.4%), indicating UX issues",
-      "5 of the top 10 products were consistently out of stock on high-traffic days",
+      "1️⃣ Peak Demand: Most bookings occur between 5 PM and 7 PM, showing high evening demand for rides.",
+      "2️⃣ Vehicle Preference: Bike rides have the highest booking volume, while Sedan rides generate higher revenue per trip.",
+      "3️⃣ Driver Cancellations: Around 72% of cancellations are initiated by drivers, indicating a need to improve driver availability and acceptance.",
+      "4️⃣ Customer Waiting Time: The average customer turnaround time (29 min) is much higher than the driver turnaround time (8.46 min), suggesting possible service delays.",
     ],
-    results: "The dashboard eliminated the 6-hour manual reporting process. The team now generates real-time reports in seconds. Insights directly informed a product restocking strategy that increased Q4 revenue by 18%.",
+    results: "The analysis revealed key patterns in ride demand, vehicle performance, and cancellation behavior. These insights can help improve driver allocation, reduce cancellations, and enhance the overall customer experience.",
+  },
+
+{
+    id: "Sotify Analysis",
+    category: "data",
+    title: "Sotify Data Analysis",
+    shortDescription: "Cleaned and analyzed Sotify music streaming data and built an interactive dashboard to explore listening patterns, peak demand times, and key trends that can help improve operational decisions.",
+    fullDescription: "This project analyzes Spotify streaming data using Power BI to explore song popularity, streaming trends, and audio features. I used Python to call a Spotify API to retrieve album images, stored them in Excel, and used HTML to display the images inside the dashboard. The dashboard interface was designed in Photoshop to match a Spotify-style layout.",
+    tools: ["Power BI", "photoshop", "HTML", "Python"],
+    cover: "assets/data/project3/cover.png",
+    gallery: ["assets/data/project3/1.png","assets/data/project3/2.png","assets/data/project3/3.png"],
+    problemStatement: "Music streaming platforms generate large amounts of data, but it is difficult to understand what makes songs popular without proper analysis. This project analyzes Spotify data to identify streaming trends and track characteristics.",
+    datasetInfo: "The dataset contains Spotify track information including track name, artist, release date, total streams, and audio features such as danceability, energy, liveness, speechiness, and valence.",
+    insights: [
+      "1️⃣ Top Tracks: Songs like Blinding Lights dominate with billions of streams.",
+      "2️⃣ Audio Features: Popular songs often have high energy and good danceability.",
+      "3️⃣ Streaming Growth: Popular tracks increased significantly after 2015 with the rise of streaming platforms.",
+      "4️⃣ Listener Preference: Balanced energy and positivity (valence) tends to attract more streams.",
+    ],
+    results: "The dashboard helps explore streaming trends, compare song performance, and understand the characteristics that contribute to successful tracks on Spotify.",
   },
 
   {
-    id: "hr-analytics",
+    id: "Sales Analysis",
     category: "data",
-    title: "HR Employee Analysis",
-    shortDescription: "Identifying the drivers of employee turnover using Python & Excel",
-    fullDescription: "A deep-dive analysis into employee attrition data for a 1,500-person company. The goal was to identify which factors most strongly predicted employee resignation so HR could take proactive action. Analysis was performed in Python (Pandas, Seaborn) with final reporting in Excel and a presentation deck.",
-    tools: ["Python", "Pandas", "Seaborn", "Excel"],
-    cover: "",
-    gallery: ["", ""],
-    problemStatement: "The company was experiencing 22% annual turnover — well above the industry average of 15%. HR leadership needed to understand why employees were leaving and which departments and roles were most at risk.",
-    datasetInfo: "IBM HR Analytics dataset, 1,470 employee records, 35 features including age, department, job role, salary, overtime, job satisfaction scores, and performance ratings.",
+    title: "Sales Data Analysis",
+    shortDescription: "Cleaned and analyzed Sales data to identify key trends, customer behavior patterns, and opportunities for business growth.",
+    fullDescription: "This project was part of a LinkedIn data analysis challenge where a simple sales dataset in Excel was analyzed. I built a Power BI dashboard to explore product performance, regional sales, and daily revenue trends.",
+    tools: ["Tableau", "Excel", "Photoshop"],
+    cover: "assets/data/project4/cover.png",
+    gallery: ["assets/data/project4/1.png","assets/data/project4/2.png","assets/data/project4/3.jpg","assets/data/project4/4.png"],
+    problemStatement: "Businesses need to understand which products and regions generate the highest revenue. This project analyzes sales data to identify top-performing products, regional performance, and revenue trends.",
+    datasetInfo: "The dataset contains basic sales information including product name, region, and revenue values for multiple transactions.",
     insights: [
-      "Employees in Sales with <2 years at the company had a 47% attrition rate — the highest segment",
-      "Overtime workers were 3.4x more likely to resign than non-overtime workers",
-      "Job satisfaction score below 2 (on 1–4 scale) predicted resignation with 71% accuracy",
-      "Salary had surprisingly low correlation with attrition — work-life balance scored higher",
-      "Employees who had not received a promotion in 4+ years left at a 2.8x higher rate",
+      "1️⃣ Top Product: Product D generated the highest total revenue among all products.",
+      "2️⃣ Top Region: Jeddah recorded the highest revenue compared to other regions.",
+      "3️⃣ Best Selling Products: Products D, B, and A are the top three best-selling products.",
+      "4️⃣ Daily Revenue Trend: Daily revenue fluctuates but shows several peak days where sales exceed 17K–19K.",
     ],
-    results: "HR used findings to redesign the onboarding process for Sales roles, limit mandatory overtime, and introduce a transparent promotion timeline. Projected attrition reduction: 8 percentage points over 12 months.",
+    results: "The dashboard highlights the best-performing products, top regions, and daily revenue patterns, helping businesses quickly understand sales performance and trends.",
   },
-
+  
   {
-    id: "pizza sales-analysis",
+    id: "Pizza Sales-Analysis",
     category: "data",
-    title: "pizza sales-analysis",
-    shortDescription: "Multi-channel marketing performance analysis using SQL & Excel",
-    fullDescription: "Analyzed 12 months of multi-channel digital marketing data for a SaaS company to determine the true ROI of each channel and guide budget reallocation. Channels analyzed: Google Ads, Facebook Ads, Email Marketing, SEO, and Influencer partnerships.",
-    tools: ["SQL", "Excel", "Google Sheets"],
-    cover: "",
-    gallery: [""],
-    problemStatement: "The marketing team was spending $40K/month across 5 channels with no clear picture of which was actually driving revenue. Budget was being allocated based on gut feeling rather than data.",
-    datasetInfo: "12 months of ad spend data, CRM conversion data, and Google Analytics traffic. Joined across platforms using SQL to build a unified attribution model.",
+    title: "Pizza Sales-Analysis",
+    shortDescription: "Multi-channel marketing performance analysis using SQL & Power BI cleaned the pizza sales dataset and created a dashboard to visualize sales trends and uncover insights that help improve business decisions.",
+    fullDescription: "In this project, the pizza sales dataset was cleaned and analyzed, and an interactive dashboard was created to visualize key metrics and sales patterns. The analysis provides insights into customer preferences, top-selling pizzas, and revenue trends to help support better business decisions.",
+    tools: ["SQL", "Power BI", "Google Sheets"],
+    cover: "assets/data/project1/cover.png",
+    gallery: ["assets/data/project1/1.png","assets/data/project1/2.png","assets/data/project1/3.png"],
+    problemStatement: "The main challenge is to transform raw sales data into meaningful insights that help answer key business questions such as: Which pizzas sell the most? What are the peak ordering times? Which categories generate the highest revenue?",
+    datasetInfo: "This dataset is used to analyze pizza sales performance, identify best-selling pizzas, understand customer preferences, and evaluate revenue trends across different pizza sizes and categories.",
     insights: [
-      "Email marketing had 380% ROI — the highest of all channels with lowest CPL ($4.20)",
-      "Google Ads drove 44% of revenue but had CPL of $82, significantly above target",
-      "Facebook Ads generated clicks but had <0.3% conversion to paid — lowest of all channels",
-      "SEO organic traffic had grown 67% YoY but was completely untracked in existing reports",
-      "Influencer spend of $8K/month had zero trackable conversions over the 12-month period",
+      "Large and Medium pizzas generate the highest sales.",
+      "Orders are higher on weekends, which shows people prefer to eat pizza more during weekends.",
+      "The Classic category generated the highest number of orders compared to other pizza categories.",
+      "Certain pizzas such as The Classic Deluxe Pizza and The Hawaiian Pizza were among the top-selling items.",
+      "Revenue was strongly influenced by popular pizza types and larger pizza sizes.",
+      "Sales showed clear peak ordering hours around lunch and evening times, suggesting that customers order pizza mainly during meal hours.",
     ],
-    results: "Recommended reallocation: cut Facebook and Influencer budget by 70%, reinvest into email list growth and SEO. Projected annual savings: $96K with maintained or improved revenue targets.",
+    results: "The analysis of the pizza sales dataset revealed several key insights about sales performance, customer preferences, and ordering patterns.",
+  },
+  {
+    id: "HR DATA Analysis",
+    category: "data",
+    title: "HR Data Analysis",
+    shortDescription: "Multi-channel marketing performance analysis using SQL & Power BI cleaned the pizza sales dataset and created a dashboard to visualize sales trends and uncover insights that help improve business decisions.",
+    fullDescription: "This project analyzes HR employee data using Excel to understand workforce trends such as employee retention, turnover, and headcount distribution. An interactive dashboard was built to visualize workforce performance across departments, job levels, demographics, and locations.",
+    tools: ["SQL", "Excel"],
+    cover: "assets/data/project5/cover.png",
+    gallery: ["assets/data/project5/1.png","assets/data/project5/2.png","assets/data/project5/3.png"],
+    problemStatement: "HR departments need clear insights about employee retention, turnover, and workforce distribution. This project analyzes HR data to identify trends that help organizations improve employee retention and workforce planning.",
+    datasetInfo: "The dataset contains employee information including department, job level, salary, age, gender, education, location, and employment status. The data was used to analyze workforce structure and employee retention patterns.",
+    insights: [
+      "1️⃣ Retention Rate: Employee retention reached 83.62%, indicating a relatively stable workforce.",
+      "2️⃣ Turnover Rate : The employee turnover rate is 37.66%, highlighting potential areas where employee satisfaction could be improved.",
+      "3️⃣ Department Distribution: The Software department has the highest number of employees, while other departments have smaller workforce sizes.",
+      "4️⃣ Work Location: Most employees work remotely compared to on-site, reflecting modern workplace flexibility trends.",
+    ],
+    results: "The dashboard helps HR teams monitor workforce performance, identify turnover patterns, and better understand employee demographics to support strategic HR decisions.",
   },
 
   // ← ADD A NEW GRAPHIC PROJECT HERE (copy template from the top of this file)
@@ -537,6 +567,86 @@ const PROJECTS = [
   // ← ADD A NEW DATA PROJECT HERE (copy template from the top of this file)
 ];
 
+
+/* ================================================================
+   SECTION 6: EXPERIENCE
+   → ADD YOUR WORK EXPERIENCE HERE
+   → Each entry appears as a timeline card
+================================================================ */
+const EXPERIENCE = [
+  // EDIT YOUR EXPERIENCE HERE ↓
+  // Copy and paste this block to add more entries
+  // {
+  //   title: "Freelance Graphic Designer",
+  //   company: "Self-Employed",
+  //   period: "2022 – Present",
+  //   type: "work",                         // "work" or "part-time" or "freelance"
+  //   description: "Designed brand identities, social media content, and visual assets for clients across food, retail, and lifestyle industries. Delivered 20+ projects including logos, packaging, and marketing materials.",
+  //   tags: ["Brand Identity", "Photoshop", "Illustrator", "Social Media"],
+  //   icon: "ph-pen-nib",
+  // },
+  // {
+  //   title: "Data Analysis Intern",
+  //   company: "Digital Company",
+  //   period: "2023",
+  //   type: "internship",
+  //   description: "Analyzed sales data and built interactive dashboards in Power BI. Cleaned and transformed datasets using Excel and SQL, delivering weekly reports to management.",
+  //   tags: ["Power BI", "Excel", "SQL", "Data Visualization"],
+  //   icon: "ph-chart-bar",
+  // },
+];
+
+/* ================================================================
+   SECTION 7: TRAINING & COURSES
+   → ADD YOUR COURSES AND CERTIFICATIONS HERE
+================================================================ */
+const TRAINING = [
+  // EDIT YOUR TRAINING HERE ↓
+  // Copy and paste this block to add more entries
+  {
+    title: "Business Intelligence Track – Information Technology Institute (ITI)",
+    company: "Information Technology Institute (ITI)",
+    period: "2025",
+    type: "certificate",
+    description: "Completed a Business Intelligence training program covering SQL, Power BI, Tableau, Excel, and data warehousing concepts for data analysis and business reporting.",
+    tags: ["SQL", "Power BI", "Tableau", "Excel", "Data Warehouse"],
+    icon: "ph-certificate",
+  },
+  {
+  title: "AI Training – Huawei",
+  company: "Huawei",
+  period: "2024",
+  type: "certificate",
+  description: "Completed training in Artificial Intelligence fundamentals and practical AI applications including core concepts of machine learning and AI technologies.",
+  tags: ["Artificial Intelligence", "Machine Learning", "AI Fundamentals"]
+  },
+  {
+    title: "Adobe Photoshop & Illustrator Masterclass",
+    company: "Online Platform",
+    period: "2022",
+    type: "course",
+    description: "Advanced training in Adobe Creative Suite — photo manipulation, vector illustration, typography, and brand identity design.",
+    tags: ["Photoshop", "Illustrator", "Typography", "Branding"],
+    icon: "ph-paint-brush",
+  },
+  {
+    title: "Python for Data Science",
+    company: "DataCamp",
+    period: "2023",
+    type: "certificate",
+    description: "Learned Python fundamentals for data science including NumPy, Pandas, Matplotlib, and Seaborn for data wrangling and exploratory data analysis.",
+    tags: ["Python", "Pandas", "NumPy", "Matplotlib"],
+    icon: "ph-code",
+  },
+  {
+  title: "Arduino: From Beginner to Advanced",
+  company: "Coursera",
+  period: "2024",
+  type: "Training",
+  description: "Covered Arduino programming, working with sensors and microcontrollers, and building hardware-based smart systems and automation projects.",
+  tags: ["Arduino", "Embedded Systems", "Sensors", "C++"]
+ }
+];
 
 /* ================================================================
    DO NOT EDIT BELOW THIS LINE
@@ -550,4 +660,6 @@ window.PORTFOLIO_DATA = {
   SKILLS,
   SERVICES,
   PROJECTS,
+  EXPERIENCE,
+  TRAINING,
 };
